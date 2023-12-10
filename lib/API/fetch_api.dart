@@ -18,7 +18,6 @@ class Api {
       throw Exception('Failed to load data');
     }
   }
-
   Future<List<Results>> getTopRatedMovies() async {
     final response = await http.get(Uri.parse(_topRatedUrl));
     if (response.statusCode == 200) {
